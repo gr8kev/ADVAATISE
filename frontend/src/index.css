@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
+}
+
+a {
+  text-decoration: none;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #01a19e;
+}
+
+* {
+  scrollbar-color: #01a19e transparent;
+}

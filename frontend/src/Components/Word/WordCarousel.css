@@ -1,0 +1,100 @@
+.carousel .slide h2 {
+  font-size: 4em;
+  text-align: center;
+  color: #ffff;
+  white-space: pre-wrap; /* This ensures the <br/> tags are properly handled */
+}
+
+.word-carousel .carousel-slide {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.word-carousel {
+  width: 100%;
+  display: flex;
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  max-height: 500px;
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .word-carousel .carousel-slide {
+    margin-top: -5%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .word-carousel .slide h2 {
+    font-size: 3em;
+    text-align: center;
+    color: #ffff;
+    white-space: pre-wrap;
+  }
+  .word-carousel {
+    width: 100%;
+    display: flex;
+    background: linear-gradient(to right, #43cea2, #185a9d);
+    max-height: 400px;
+  }
+
+  .word-carousel .carousel-slide {
+    margin-top: -10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .word-carousel .slide h2 {
+    font-size: 1.8em;
+    text-align: center;
+    color: #ffff;
+    white-space: pre-wrap;
+  }
+  .word-carousel {
+    width: 100%;
+    display: flex;
+    background: linear-gradient(to right, #43cea2, #185a9d);
+    max-height: 300px;
+  }
+
+  .word-carousel .carousel-slide {
+    margin-top: -30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .word-carousel .slide h2 {
+    font-size: 1.3em;
+    text-align: center;
+    color: #ffff;
+    white-space: pre-wrap;
+  }
+  .word-carousel {
+    width: 100%;
+    display: flex;
+    background: linear-gradient(to right, #43cea2, #185a9d);
+    max-height: 200px;
+  }
+
+  .word-carousel .carousel-slide {
+    margin-top: -30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+  }
+}

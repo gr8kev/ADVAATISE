@@ -1,0 +1,368 @@
+.wrapper {
+  margin-top: 5%;
+  padding: 0 6%;
+  background: linear-gradient(to right, #141e30, #234b55);
+  padding-bottom: 2%;
+  cursor: pointer;
+}
+
+/* Carousel styles */
+.carousel {
+  width: 100%;
+  height: 650px; /* Match this to the image height */
+}
+
+.carousel .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.carousel .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Adjust to 'cover' or 'contain' based on your preference */
+  object-position: center center; /* Center the image */
+}
+
+/* Remove default padding from the carousel container */
+.carousel .carousel-slider {
+  padding: 0 !important;
+}
+
+.carousel .thumbs-wrapper {
+  display: none;
+}
+
+.carousel .control-arrow {
+  top: 50%;
+}
+
+.carousel .control-arrow:hover {
+  background: none;
+}
+
+.carousel .control-prev {
+  left: 10px;
+}
+
+.carousel .control-next {
+  right: 10px;
+}
+
+.wrapper h2 {
+  margin-bottom: -5%;
+  color: #01a19e;
+  padding-top: 5%;
+  text-align: center;
+  font-family: "Roboto", "lato";
+  font-size: 2rem;
+  margin-top: -6%;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+  padding-top: 10%;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.service:nth-child(odd) .service-image,
+.service:nth-child(odd) .service-text {
+  order: 2;
+}
+
+.service-image,
+.service-text {
+  width: 100%;
+}
+
+.service-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.service-image:hover {
+  background: #d06d0e;
+}
+
+.service-text {
+  padding: 0 20px;
+}
+
+.service-text h3 {
+  font-size: 1.5rem;
+  color: #27cebd;
+  margin-bottom: 5%;
+  font-family: "Roboto";
+}
+
+.service-text p {
+  font-size: 1rem;
+  color: #fff;
+  letter-spacing: 1px;
+  text-align: left;
+  font-family: "Roboto", "Helvet";
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.service-text a {
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 4%;
+  background: #1b3341;
+  cursor: pointer;
+}
+
+.image {
+  width: 500px;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  text-align: center;
+  border: 3px solid #01a19e;
+  transition: border-color 0.3s ease;
+  position: relative;
+  border-radius: 3px;
+}
+
+.image::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease;
+  pointer-events: none;
+}
+
+.image:hover,
+.image:hover::before {
+  border-color: #00ffff;
+}
+
+.image p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: "Roboto", "lato";
+  padding: 10px;
+}
+
+.image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Pro-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007c79;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+  cursor: pointer;
+  margin-top: 5%;
+}
+
+.Pro-button:hover {
+  background-color: #d06d0e;
+}
+
+.content-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+.content-banner h2 {
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive adjustments */
+
+@media screen and (max-width: 1200px) {
+  .carousel {
+    height: 550px;
+  }
+  .carousel .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .carousel {
+    height: 500px;
+  }
+  .carousel .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+
+  .service-text p {
+    font-size: 0.8rem;
+  }
+  .Pro-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007c79;
+    color: #fff;
+    font-size: 0.7rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+    cursor: pointer;
+    margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    margin-top: 5%;
+  }
+
+  .wrapper h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .carousel .slide {
+    height: 480px;
+  }
+  .carousel {
+    height: 400px;
+    margin-top: 20%;
+  }
+  .service-text p {
+    font-size: 0.8rem;
+  }
+  .Pro-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007c79;
+    color: #fff;
+    font-size: 0.7rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+    cursor: pointer;
+    margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content-banner h2 {
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: -200px;
+  }
+  .services-container {
+    padding-top: 5%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .service-text h3 {
+    font-size: 1rem;
+    padding-top: 2%;
+  }
+
+  .service-text p {
+    font-size: 0.8rem;
+  }
+
+  .service-text {
+    padding: 0 10px;
+  }
+
+  .service {
+    flex-direction: column;
+  }
+
+  .service-image img {
+    padding-top: 2%;
+  }
+
+  .service-text a {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 3px;
+  }
+  .wrapper h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .image-container {
+    flex-direction: column;
+  }
+  .image {
+    width: calc(100% - 4px);
+    max-width: 100%;
+    height: auto;
+  }
+
+  .image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .image h2 {
+    font-size: 2rem;
+  }
+
+  .Pro-button {
+    font-size: 1em;
+  }
+  #banner {
+    padding-top: 85px;
+  }
+  #banner img {
+    width: 100%;
+    height: 300px;
+  }
+  .carousel {
+    height: 260px;
+  }
+  .carousel .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 345px;
+  }
+}

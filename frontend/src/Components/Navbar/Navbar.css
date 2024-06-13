@@ -1,0 +1,113 @@
+.logo {
+  height: 50px;
+}
+.ham {
+  height: 35px;
+  display: none;
+}
+.cross {
+  height: 35px;
+  display: none;
+}
+.sig {
+  display: none;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 90px;
+  background: #163138;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
+.bar {
+  display: flex;
+  gap: 50px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 60px;
+  font-size: 1.1rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+.menu li a {
+  color: #ffffff;
+  transition: color 0.3s;
+  font-size: 1.1rem;
+}
+.menu li a:hover {
+  color: #d06d0e;
+}
+.Signin {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  color: #ffffff;
+  background-color: #007c79;
+  border-radius: 3px;
+  transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+  cursor: pointer;
+}
+
+.Signin:hover {
+  background-color: #d06d0e;
+  color: #ffffff;
+}
+
+@media (max-width: 991px) {
+  .Signin {
+    display: none;
+  }
+  .logo {
+    height: 35px;
+    margin-left: -65px;
+  }
+
+  .ham {
+    height: 35px;
+    display: block;
+    position: absolute;
+    right: 30px;
+  }
+  .cross {
+    display: block;
+    position: relative;
+    top: 10px;
+    left: 60%;
+  }
+  .Signin {
+    margin-right: 50px;
+    padding: 6px 10px;
+  }
+  .sig {
+    display: none;
+  }
+  .menu {
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    top: 0;
+    gap: 30px;
+    background: #163138;
+    width: 200px;
+    height: 100%;
+    z-index: 100;
+    transition: right 0.5s;
+    padding: 0 10px;
+    right: -100%;
+  }
+  .menu li a {
+    font-size: 18px;
+    padding-left: 10px;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .sig {
+    display: block;
+  }
+}
