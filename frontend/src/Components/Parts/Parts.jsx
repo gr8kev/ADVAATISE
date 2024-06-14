@@ -88,12 +88,14 @@ const VideoCarousel = () => {
       <button
         onClick={prevVideo}
         style={{ position: "absolute", left: "0", top: "50%" }}
+        className="carousel-button"
       >
         Prev
       </button>
       <button
         onClick={nextVideo}
         style={{ position: "absolute", right: "0", top: "50%" }}
+        className="carousel-button"
       >
         Next
       </button>
