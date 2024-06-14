@@ -236,6 +236,7 @@ const Form = () => {
               value={formData.username}
               onChange={handleChange}
               required
+              className="form-in"
             />
           </div>
           <div className="form-group">
@@ -246,7 +247,7 @@ const Form = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              required
+              className="form-in"
             />
           </div>
           <div className="form-group">
@@ -258,6 +259,7 @@ const Form = () => {
               value={formData.password}
               onChange={handleChange}
               required
+              className="form-in"
             />
           </div>
           <div className="form-group">
@@ -269,6 +271,7 @@ const Form = () => {
               value={formData.confirmPassword}
               onChange={handleChange}
               required
+              className="form-in"
             />
           </div>
           <div className="form-group">
@@ -280,6 +283,7 @@ const Form = () => {
               value={formData.companyName}
               onChange={handleChange}
               required
+              className="form-in"
             />
           </div>
           <div className="form-group">
@@ -290,7 +294,7 @@ const Form = () => {
               name="companyAddress"
               value={formData.companyAddress}
               onChange={handleChange}
-              required
+              className="form-in"
             />
           </div>
           <div className="form-group">
@@ -302,6 +306,7 @@ const Form = () => {
               value={formData.phoneNumber}
               onChange={handleChange}
               required
+              className="form-in"
             />
           </div>
           <div className="form-group">

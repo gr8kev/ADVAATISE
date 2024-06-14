@@ -49,9 +49,9 @@ label {
   color: #163138;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
+.form-in[type="text"],
+.form-in[type="email"],
+.form-in[type="password"],
 select {
   width: 100%;
   padding: 12px;
@@ -59,12 +59,6 @@ select {
   border-radius: 4px;
   background-color: #fff; /* Ensure background color is set */
   font-size: 1rem;
-}
-
-.error-message {
-  color: red;
-  margin-top: 5px;
-  text-align: center;
 }
 
 button[type="submit"] {

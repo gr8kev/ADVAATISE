@@ -15,7 +15,7 @@ import Signin from "./pages/Signin/Signin";
 import Form from "./pages/Form/Form";
 import Portfolios from "./pages/Portfolios/Portfolios";
 import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
-import Preloader from "./Components/PreLoader/Preloader";
+// import Preloader from "./Components/PreLoader/Preloader"; // Remove Preloader import
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -27,7 +27,7 @@ const ScrollToTop = () => {
 
 const App = () => {
   const location = useLocation();
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true); // Remove loading state
 
   useEffect(() => {
     const preloadResources = async () => {
@@ -43,10 +43,10 @@ const App = () => {
           import("./pages/ForgotPassword/ForgotPassword"),
         ];
         await Promise.all(preloads);
-        setLoading(false);
+        // setLoading(false); // Remove setting loading state to false
       } catch (error) {
         console.error("Error preloading resources:", error);
-        setLoading(false); // Set loading to false even if there's an error to prevent infinite loader
+        // setLoading(false); // Remove setting loading state to false even if there's an error
       }
     };
 
@@ -60,9 +60,9 @@ const App = () => {
     "/forgotpassword",
   ].includes(location.pathname.toLowerCase());
 
-  if (loading) {
-    return <Preloader />;
-  }
+  // if (loading) {
+  //   return <Preloader />; // Remove Preloader display logic
+  // }
 
   return (
     <div>
