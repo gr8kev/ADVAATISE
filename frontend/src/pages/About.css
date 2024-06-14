@@ -16,6 +16,8 @@
   font-weight: 400;
   color: #d06d0e;
   margin-top: 10%;
+  text-align: center;
+  margin-bottom: 2%;
 }
 .about-info {
   display: flex;

@@ -207,7 +207,7 @@ form {
   margin-top: 20px;
   width: 100%;
 }
-.type input,
+.type .in,
 textarea {
   width: 100% !important;
   padding: 5px 0;

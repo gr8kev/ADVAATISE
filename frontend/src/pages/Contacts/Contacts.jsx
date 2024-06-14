@@ -104,11 +104,11 @@ const Contact = () => {
             <form>
               <h2>Send Message</h2>
               <div className="type">
-                <input type="text" name="" required="required" />
+                <input type="text" name="" required="required" className="in" />
                 <span>Full Name</span>
               </div>
               <div className="type">
-                <input type="text" name="" required="required" />
+                <input type="text" name="" required="required" className="in" />
                 <span>Email</span>
               </div>
               <div className="type">
@@ -116,7 +116,7 @@ const Contact = () => {
                 <span>Type your Message</span>
               </div>
               <div className="type">
-                <input type="submit" value="Send" />
+                <input type="submit" value="Send" className="in" />
               </div>
             </form>
           </div>
